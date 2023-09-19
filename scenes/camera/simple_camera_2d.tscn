@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn1q3ktbqdnoy"]
+
+[ext_resource type="Script" path="res://scenes/camera/camera_follow.gd" id="1_ps0x1"]
+
+[node name="SimpleCamera2D" type="Camera2D"]
+zoom = Vector2(2, 2)
+drag_top_margin = 1.0
+drag_bottom_margin = 1.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("1_ps0x1")
+
+[node name="MarkerContainer" type="Node" parent="."]
+
+[node name="LimitTop" type="Marker2D" parent="MarkerContainer"]
+position = Vector2(0, -104)
+
+[node name="LimitBottom" type="Marker2D" parent="MarkerContainer"]
+position = Vector2(0, 144)
+
+[node name="LimitLeft" type="Marker2D" parent="MarkerContainer"]
+position = Vector2(-280, 0)
+
+[node name="LimitRight" type="Marker2D" parent="MarkerContainer"]
+position = Vector2(240, 0)

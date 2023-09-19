@@ -1,0 +1,163 @@
+[gd_scene load_steps=21 format=3 uid="uid://cg4nmhswyalm2"]
+
+[ext_resource type="Script" path="res://scenes/enemies/slime/slime.gd" id="1_f6iq1"]
+[ext_resource type="Texture2D" uid="uid://do44oycqc5rq8" path="res://assets/Pixel Adventure 2/Enemies/Slime/Hit (44x30).png" id="2_mapuk"]
+[ext_resource type="Texture2D" uid="uid://cj16mu1nkmf42" path="res://assets/Pixel Adventure 2/Enemies/Slime/Idle-Run (44x30).png" id="3_od7qp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8utla"]
+atlas = ExtResource("2_mapuk")
+region = Rect2(0, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8vea"]
+atlas = ExtResource("2_mapuk")
+region = Rect2(44, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twwv8"]
+atlas = ExtResource("2_mapuk")
+region = Rect2(88, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ypo4e"]
+atlas = ExtResource("2_mapuk")
+region = Rect2(132, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ygm0"]
+atlas = ExtResource("2_mapuk")
+region = Rect2(176, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dwtl"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(0, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_te0ik"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(44, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11ncb"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(88, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bncws"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(132, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh78c"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(176, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owrj7"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(220, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ck5bl"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(264, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86sa5"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(308, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ix5pq"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(352, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efjln"]
+atlas = ExtResource("3_od7qp")
+region = Rect2(396, 0, 44, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lv4tt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8utla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8vea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_twwv8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ypo4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ygm0")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dwtl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_te0ik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11ncb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bncws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh78c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_owrj7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ck5bl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86sa5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ix5pq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efjln")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ddfqo"]
+size = Vector2(13.9999, 18)
+
+[node name="Slime" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_f6iq1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -3)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_lv4tt")
+animation = &"run"
+autoplay = "run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_ddfqo")
+
+[node name="FlipTimer" type="Timer" parent="."]
+editor_description = "Enable Autostart to use Timer. Otherwise it is ignored."
+
+[node name="GroundCheckRayCast" type="RayCast2D" parent="."]
+position = Vector2(-13, 0)
+target_position = Vector2(0, 10)
+collision_mask = 2
+
+[node name="WallCheckRayCast" type="RayCast2D" parent="."]
+position = Vector2(-6, 0)
+target_position = Vector2(-7, 0)
+collision_mask = 2
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="FlipTimer" to="." method="_on_flip_timer_timeout"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
