@@ -1,3 +1,7 @@
+res://themes
+res://scenes/game
+res://fonts
+res://scenes/levels
 res://scenes/ui
 res://global
 res://assets/Pixel Adventure 1/Items/Fruits
@@ -11,5 +15,4 @@ res://scenes/obstacles
 res://scenes/environment
 res://scenes/camera
 res://scenes/checkpoints
-res://scenes/game
 C:/Users/sudo/Documents/Dev/Godot/Proj
