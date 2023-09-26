@@ -1,6 +1,9 @@
+Label
+CenterContainer
+CanvasLayer
+Control
 MarginContainer
 PanelContainer
-Label
 GridContainer
 Node
 RichTextLabel
@@ -10,7 +13,6 @@ Sprite2D
 Camera2D
 Node2D
 TextureRect
-CanvasLayer
 CollisionShape2D
 AnimatedSprite2D
 Area2D

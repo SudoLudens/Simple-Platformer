@@ -1,2 +1,4 @@
 res://scenes/game/menu_main.tscn
 res://themes/theme.tres
+res://scenes/game/main.tscn
+res://scenes/levels/lvl_demo.tscn

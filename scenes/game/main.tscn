@@ -8,9 +8,10 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="UICanvasLayer" type="CanvasLayer" parent="."]
+[node name="ScoreUI" type="CanvasLayer" parent="."]
+visible = false
 
-[node name="ScoreLabel" type="RichTextLabel" parent="UICanvasLayer"]
+[node name="ScoreLabel" type="RichTextLabel" parent="ScoreUI"]
 clip_contents = false
 offset_left = 93.0
 offset_top = 28.0
@@ -26,13 +27,19 @@ autowrap_mode = 0
 script = ExtResource("7_pvbsp")
 metadata/_edit_use_anchors_ = true
 
-[node name="PickupImage" type="TextureRect" parent="UICanvasLayer"]
+[node name="PickupImage" type="TextureRect" parent="ScoreUI"]
 offset_left = 24.0
 offset_top = 34.0
 offset_right = 64.0
 offset_bottom = 74.0
 texture = ExtResource("8_qr0io")
 metadata/_edit_use_anchors_ = true
+
+[node name="Levels" type="Node" parent="." node_paths=PackedStringArray("demo_scene")]
+script = ExtResource("5_76k0w")
+demo_scene = NodePath("LevelDemo")
+
+[node name="LevelDemo" parent="Levels" instance=ExtResource("4_418qe")]
 
 [node name="SimpleCamera2D" parent="." instance=ExtResource("3_5t6t7")]
 position = Vector2(632, 512)
@@ -50,11 +57,5 @@ position = Vector2(272, 512)
 
 [node name="LimitRight" parent="SimpleCamera2D/MarkerContainer" index="3"]
 position = Vector2(832, 512)
-
-[node name="Levels" type="Node" parent="." node_paths=PackedStringArray("demo_scene")]
-script = ExtResource("5_76k0w")
-demo_scene = NodePath("LevelDemo")
-
-[node name="LevelDemo" parent="Levels" instance=ExtResource("4_418qe")]
 
 [editable path="SimpleCamera2D"]
