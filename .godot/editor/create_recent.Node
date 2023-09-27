@@ -1,10 +1,12 @@
-AnimationPlayer
 Label
+MarginContainer
+PanelContainer
+AnimationPlayer
+Button
+HBoxContainer
 CenterContainer
 CanvasLayer
 Control
-MarginContainer
-PanelContainer
 GridContainer
 Node
 RichTextLabel

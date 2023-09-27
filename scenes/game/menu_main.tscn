@@ -1,6 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://codtvbbybgi4u"]
-
-[ext_resource type="Theme" uid="uid://dvbxmxjaku68b" path="res://themes/theme.tres" id="1_2lyf3"]
+[gd_scene load_steps=7 format=3 uid="uid://codtvbbybgi4u"]
 
 [sub_resource type="Animation" id="Animation_7eaan"]
 resource_name = "title_intro"
@@ -18,25 +16,48 @@ tracks/0/keys = {
 "values": [Vector2(256, -168), Vector2(256, 136)]
 }
 
-[sub_resource type="Animation" id="Animation_f276e"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_74n3r"]
+_data = {
+"title_intro": SubResource("Animation_7eaan")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_40nfe"]
+
+[sub_resource type="Animation" id="Animation_bqad5"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath(".:theme_override_constants/separation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(256, 136)]
+"update": 1,
+"values": [155]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_74n3r"]
+[sub_resource type="Animation" id="Animation_mj48f"]
+resource_name = "intro"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:theme_override_constants/separation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(2, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1400, 155]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hsex2"]
 _data = {
-"RESET": SubResource("Animation_f276e"),
-"title_intro": SubResource("Animation_7eaan")
+"RESET": SubResource("Animation_bqad5"),
+"intro": SubResource("Animation_mj48f")
 }
 
 [node name="MenuMain" type="CanvasLayer"]
@@ -49,7 +70,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.419608, 0.592157, 1, 1)
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="TitlePanelContainer" type="PanelContainer" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -58,18 +79,58 @@ offset_top = 136.0
 offset_right = 320.0
 offset_bottom = 240.0
 grow_horizontal = 2
-theme = ExtResource("1_2lyf3")
 
-[node name="CenterContainer" type="CenterContainer" parent="PanelContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="TitlePanelContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="Title" type="Label" parent="PanelContainer/CenterContainer"]
+[node name="Title" type="Label" parent="TitlePanelContainer/CenterContainer"]
 layout_mode = 2
 text = "Yump froggy yump"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="PanelContainer"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TitlePanelContainer"]
 autoplay = "title_intro"
 libraries = {
 "": SubResource("AnimationLibrary_74n3r")
+}
+
+[node name="ButtonsHBox" type="HBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -304.0
+offset_top = -224.0
+offset_right = 304.0
+offset_bottom = -152.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 155
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="ButtonsHBox"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ButtonsHBox/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Button" type="Button" parent="ButtonsHBox/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_40nfe")
+text = "start game"
+
+[node name="Button2" type="Button" parent="ButtonsHBox"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_40nfe")
+text = "Button 2"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ButtonsHBox"]
+autoplay = "intro"
+libraries = {
+"": SubResource("AnimationLibrary_hsex2")
 }

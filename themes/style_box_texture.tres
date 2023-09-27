@@ -1,0 +1,7 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://34brjt1w5u71"]
+
+[ext_resource type="Texture2D" uid="uid://31kswbjm8vf4" path="res://assets/DELETE - ui/panelHealthLife64X16.png" id="1_csn32"]
+
+[resource]
+texture = ExtResource("1_csn32")
+modulate_color = Color(1, 0.235294, 0, 0.941176)

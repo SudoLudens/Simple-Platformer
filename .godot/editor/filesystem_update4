@@ -4,3 +4,4 @@ res://scenes/game/main.tscn
 res://scenes/levels/lvl_demo.tscn
 res://scenes/player/player.tscn
 res://scenes/player/player.gd
+res://themes/style_box_texture.tres
