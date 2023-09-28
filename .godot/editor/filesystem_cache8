@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1695608833
+::res://::1695822435
 icon.svg::CompressedTexture2D::1308861470170980129::1688059370::1688059383::1::::<><>::
 README.md::TextFile::-1::1695165336::0::1::::<><>::
 test.gd::GDScript::-1::1695165131::0::1::::<>Node<>::
@@ -370,12 +370,12 @@ slime.tscn::PackedScene::5254652531016547743::1695055499::0::1::::<><>::res://sc
 ::res://scenes/environment/::1689805894
 one_way_floor.tscn::PackedScene::7487450572197354672::1689791039::0::1::::<><>::uid://c30lokb18did4
 tile_room.tscn::PackedScene::8565966790456665024::1689805894::0::1::::<><>::uid://c30lokb18did4
-::res://scenes/game/::1695608826
-main.tscn::PackedScene::7953439008076172546::1695608826::0::1::::<><>::uid://dn1q3ktbqdnoy::::res://scenes/camera/simple_camera_2d.tscn<>uid://c282cxrt8p73o::::res://scenes/levels/lvl_demo.tscn<>res://scenes/game/test_disable.gd<>res://scenes/ui/ScoreLabel.gd<>uid://cicaw2tsd0gx::::res://assets/Bananas.png
-menu_main.tscn::PackedScene::5762869491275587598::1695608826::0::1::::<><>::uid://dvbxmxjaku68b::::res://themes/theme.tres
+::res://scenes/game/::1695786862
+main.tscn::PackedScene::7953439008076172546::1695785822::0::1::::<><>::uid://dn1q3ktbqdnoy::::res://scenes/camera/simple_camera_2d.tscn<>uid://c282cxrt8p73o::::res://scenes/levels/lvl_demo.tscn<>res://scenes/game/test_disable.gd<>res://scenes/ui/ScoreLabel.gd<>uid://cicaw2tsd0gx::::res://assets/Bananas.png
+menu_main.tscn::PackedScene::5762869491275587598::1695786862::0::1::::<><>::
 test_disable.gd::GDScript::-1::1695589692::0::1::::<>Node<>::
-::res://scenes/levels/::1695608827
-lvl_demo.tscn::PackedScene::6737708777096281454::1695608827::0::1::::<><>::uid://d0ntcar4bl8cp::::res://scenes/obstacles/launchpad/launch_pad.tscn<>uid://dubohsdh0kvdg::::res://scenes/environment/tile_room.tscn<>uid://cg4nmhswyalm2::::res://scenes/enemies/slime/slime.tscn<>uid://e5sede8ess7u::::res://scenes/player/player.tscn<>uid://dfwc12lhldld6::::res://scenes/pickups/banana.tscn
+::res://scenes/levels/::1695737180
+lvl_demo.tscn::PackedScene::6737708777096281454::1695737180::0::1::::<><>::uid://d0ntcar4bl8cp::::res://scenes/obstacles/launchpad/launch_pad.tscn<>uid://dubohsdh0kvdg::::res://scenes/environment/tile_room.tscn<>uid://cg4nmhswyalm2::::res://scenes/enemies/slime/slime.tscn<>uid://e5sede8ess7u::::res://scenes/player/player.tscn<>uid://dfwc12lhldld6::::res://scenes/pickups/banana.tscn
 ::res://scenes/obstacles/::1689806732
 ::res://scenes/obstacles/launchpad/::1689899686
 launch_pad.gd::GDScript::-1::1689806972::0::1::::<>Area2D<>::
@@ -383,10 +383,11 @@ launch_pad.tscn::PackedScene::8941977274864371743::1689899686::0::1::::<><>::res
 ::res://scenes/pickups/::1691780255
 banana.gd::GDScript::-1::1691780254::0::1::::<>Area2D<>::
 banana.tscn::PackedScene::7555791879942021273::1690984566::0::1::::<><>::res://scenes/pickups/banana.gd<>uid://brajlf4gnqubw
-::res://scenes/player/::1695055499
-player.gd::GDScript::-1::1690514995::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::343786921474050572::1695055499::0::1::::<><>::res://scenes/player/player.gd<>uid://cubguojcg54q8
+::res://scenes/player/::1695785822
+player.gd::GDScript::-1::1695737193::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::343786921474050572::1695785822::0::1::::<><>::res://scenes/player/player.gd<>uid://cubguojcg54q8::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Fall (32x32).png<>uid://b2siedas33105::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Idle (32x32).png<>uid://de3figg84fosh::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Run (32x32).png<>uid://w7t1yhnf2df6::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Hit (32x32).png<>uid://brqrm631ygp3h::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Jump (32x32).png
 ::res://scenes/ui/::1691005970
 ScoreLabel.gd::GDScript::-1::1691005970::0::1::::<>RichTextLabel<>::
-::res://themes/::1695608826
-theme.tres::Theme::8636711287547009887::1695608826::0::1::::<><>::uid://cb63hpbfwt46t::::res://fonts/retro_computer_personal_use.ttf
+::res://themes/::1695786692
+style_box_texture.tres::StyleBoxTexture::2025246155495148922::1695786231::0::1::::<><>::uid://31kswbjm8vf4::::res://assets/DELETE - ui/panelHealthLife64X16.png
+theme.tres::Theme::8636711287547009887::1695786692::0::1::::<><>::uid://cb63hpbfwt46t::::res://fonts/retro_computer_personal_use.ttf<>uid://34brjt1w5u71::::res://themes/style_box_texture.tres

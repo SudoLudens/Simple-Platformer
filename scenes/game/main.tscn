@@ -9,7 +9,6 @@
 [node name="Main" type="Node2D"]
 
 [node name="ScoreUI" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="ScoreLabel" type="RichTextLabel" parent="ScoreUI"]
 clip_contents = false
