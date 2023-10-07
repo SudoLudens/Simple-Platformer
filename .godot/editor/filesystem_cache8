@@ -1,25 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1695822435
+::res://::1696647383
 icon.svg::CompressedTexture2D::1308861470170980129::1688059370::1688059383::1::::<><>::
 README.md::TextFile::-1::1695165336::0::1::::<><>::
 test.gd::GDScript::-1::1695165131::0::1::::<>Node<>::
-::res://assets/::1695608983
+::res://assets/::1696645589
 Bananas.png::CompressedTexture2D::157015341404972447::1690987328::1690987331::1::::<><>::
-::res://assets/DELETE - ui/::1695608989
-button64X14.png::CompressedTexture2D::7393231929638043569::1695608989::1695608989::1::::<><>::
-buttonSquare64X64.png::CompressedTexture2D::3520519095237678738::1695608989::1695608989::1::::<><>::
-healthBar64X16.png::CompressedTexture2D::7216198114562060325::1695608989::1695608989::1::::<><>::
-healthBar64X64.png::CompressedTexture2D::8300201194373839847::1695608989::1695608989::1::::<><>::
-inputField64X24.png::CompressedTexture2D::1732564931905792978::1695608989::1695608989::1::::<><>::
-lock64X64.png::CompressedTexture2D::1796867914576166656::1695608989::1695608989::1::::<><>::
-lockGreen64X64.png::CompressedTexture2D::2525155228179451717::1695608989::1695608989::1::::<><>::
-lockRed64X64.png::CompressedTexture2D::3584691380192823771::1695608989::1695608989::1::::<><>::
-mouse64X64.png::CompressedTexture2D::8165937909341960831::1695608989::1695608989::1::::<><>::
-panelCard42X64.png::CompressedTexture2D::1817608603944803391::1695608989::1695608989::1::::<><>::
-panelHealthLife64X16.png::CompressedTexture2D::2019601915173197635::1695608989::1695608989::1::::<><>::
-pausePanel64X58.png::CompressedTexture2D::4158624673211079544::1695608989::1695608989::1::::<><>::
-personalizableMenu64X54.png::CompressedTexture2D::5205375847814857110::1695608989::1695608989::1::::<><>::
-something64X64.png::CompressedTexture2D::1493127143701732413::1695608989::1695608989::1::::<><>::
 ::res://assets/Pixel Adventure 1/::1689007442
 20 Enemies.png::CompressedTexture2D::4280985252831115569::1689007440::1689007442::1::::<><>::
 Hello.png::CompressedTexture2D::6382882667583724032::1689007440::1689007442::1::::<><>::
@@ -370,12 +355,12 @@ slime.tscn::PackedScene::5254652531016547743::1695055499::0::1::::<><>::res://sc
 ::res://scenes/environment/::1689805894
 one_way_floor.tscn::PackedScene::7487450572197354672::1689791039::0::1::::<><>::uid://c30lokb18did4
 tile_room.tscn::PackedScene::8565966790456665024::1689805894::0::1::::<><>::uid://c30lokb18did4
-::res://scenes/game/::1695786862
-main.tscn::PackedScene::7953439008076172546::1695785822::0::1::::<><>::uid://dn1q3ktbqdnoy::::res://scenes/camera/simple_camera_2d.tscn<>uid://c282cxrt8p73o::::res://scenes/levels/lvl_demo.tscn<>res://scenes/game/test_disable.gd<>res://scenes/ui/ScoreLabel.gd<>uid://cicaw2tsd0gx::::res://assets/Bananas.png
-menu_main.tscn::PackedScene::5762869491275587598::1695786862::0::1::::<><>::
+::res://scenes/game/::1696647236
+main.tscn::PackedScene::7953439008076172546::1696647236::0::1::::<><>::uid://dn1q3ktbqdnoy
 test_disable.gd::GDScript::-1::1695589692::0::1::::<>Node<>::
-::res://scenes/levels/::1695737180
-lvl_demo.tscn::PackedScene::6737708777096281454::1695737180::0::1::::<><>::uid://d0ntcar4bl8cp::::res://scenes/obstacles/launchpad/launch_pad.tscn<>uid://dubohsdh0kvdg::::res://scenes/environment/tile_room.tscn<>uid://cg4nmhswyalm2::::res://scenes/enemies/slime/slime.tscn<>uid://e5sede8ess7u::::res://scenes/player/player.tscn<>uid://dfwc12lhldld6::::res://scenes/pickups/banana.tscn
+::res://scenes/levels/::1696647383
+lvl_demo.tscn::PackedScene::6737708777096281454::1695737180::0::1::::<><>::uid://d0ntcar4bl8cp
+menu_main.tscn::PackedScene::5762869491275587598::1696647383::0::1::::<><>::uid://chtsmr871vxlg::::res://themes/1style_box_default.tres<>uid://jwupym5lbwei::::res://themes/style_box_dark.tres
 ::res://scenes/obstacles/::1689806732
 ::res://scenes/obstacles/launchpad/::1689899686
 launch_pad.gd::GDScript::-1::1689806972::0::1::::<>Area2D<>::
@@ -383,11 +368,12 @@ launch_pad.tscn::PackedScene::8941977274864371743::1689899686::0::1::::<><>::res
 ::res://scenes/pickups/::1691780255
 banana.gd::GDScript::-1::1691780254::0::1::::<>Area2D<>::
 banana.tscn::PackedScene::7555791879942021273::1690984566::0::1::::<><>::res://scenes/pickups/banana.gd<>uid://brajlf4gnqubw
-::res://scenes/player/::1695785822
+::res://scenes/player/::1696647236
 player.gd::GDScript::-1::1695737193::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::343786921474050572::1695785822::0::1::::<><>::res://scenes/player/player.gd<>uid://cubguojcg54q8::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Fall (32x32).png<>uid://b2siedas33105::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Idle (32x32).png<>uid://de3figg84fosh::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Run (32x32).png<>uid://w7t1yhnf2df6::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Hit (32x32).png<>uid://brqrm631ygp3h::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Jump (32x32).png
+player.tscn::PackedScene::343786921474050572::1696647236::0::1::::<><>::res://scenes/player/player.gd<>uid://cubguojcg54q8
 ::res://scenes/ui/::1691005970
 ScoreLabel.gd::GDScript::-1::1691005970::0::1::::<>RichTextLabel<>::
-::res://themes/::1695786692
-style_box_texture.tres::StyleBoxTexture::2025246155495148922::1695786231::0::1::::<><>::uid://31kswbjm8vf4::::res://assets/DELETE - ui/panelHealthLife64X16.png
-theme.tres::Theme::8636711287547009887::1695786692::0::1::::<><>::uid://cb63hpbfwt46t::::res://fonts/retro_computer_personal_use.ttf<>uid://34brjt1w5u71::::res://themes/style_box_texture.tres
+::res://themes/::1696647383
+1style_box_default.tres::StyleBoxFlat::5304501730941248480::1696647036::0::1::::<><>::
+style_box_dark.tres::StyleBoxFlat::678358310571392992::1696647077::0::1::::<><>::
+theme.tres::Theme::8636711287547009887::1696645709::0::1::::<><>::uid://cb63hpbfwt46t
