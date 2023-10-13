@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://c282cxrt8p73o"]
+[gd_scene load_steps=10 format=3 uid="uid://c282cxrt8p73o"]
 
 [ext_resource type="PackedScene" uid="uid://d0ntcar4bl8cp" path="res://scenes/obstacles/launchpad/launch_pad.tscn" id="1_xtmj8"]
 [ext_resource type="PackedScene" uid="uid://dubohsdh0kvdg" path="res://scenes/environment/tile_room.tscn" id="2_3fiwv"]
 [ext_resource type="PackedScene" uid="uid://cg4nmhswyalm2" path="res://scenes/enemies/slime/slime.tscn" id="3_nql3v"]
 [ext_resource type="PackedScene" uid="uid://e5sede8ess7u" path="res://scenes/player/player.tscn" id="4_7to52"]
 [ext_resource type="PackedScene" uid="uid://dfwc12lhldld6" path="res://scenes/pickups/banana.tscn" id="5_72u6w"]
+[ext_resource type="PackedScene" uid="uid://dn1q3ktbqdnoy" path="res://scenes/camera/simple_camera_2d.tscn" id="6_7vsgk"]
+[ext_resource type="PackedScene" uid="uid://cids43e5xj1qi" path="res://scenes/ui/score_ui.tscn" id="7_jks5d"]
 
 [sub_resource type="Gradient" id="Gradient_e40dl"]
 colors = PackedColorArray(0.419608, 0.592157, 1, 1, 0.419608, 0.592157, 1, 1)
@@ -60,3 +62,26 @@ position = Vector2(696, 597)
 
 [node name="Banana8" parent="Pickups" instance=ExtResource("5_72u6w")]
 position = Vector2(743, 597)
+
+[node name="SimpleCamera2D" parent="." instance=ExtResource("6_7vsgk")]
+position = Vector2(632, 512)
+sync_limit_left = true
+sync_limit_right = true
+
+[node name="LimitTop" parent="SimpleCamera2D/MarkerContainer" index="0"]
+position = Vector2(496, 278)
+
+[node name="LimitBottom" parent="SimpleCamera2D/MarkerContainer" index="1"]
+position = Vector2(480, 624)
+
+[node name="LimitLeft" parent="SimpleCamera2D/MarkerContainer" index="2"]
+position = Vector2(272, 512)
+
+[node name="LimitRight" parent="SimpleCamera2D/MarkerContainer" index="3"]
+position = Vector2(832, 512)
+
+[node name="UI" type="Node" parent="."]
+
+[node name="ScoreUI" parent="UI" instance=ExtResource("7_jks5d")]
+
+[editable path="SimpleCamera2D"]

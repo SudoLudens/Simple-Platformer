@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://cids43e5xj1qi"]
+
+[ext_resource type="Script" path="res://scenes/ui/score_ui.gd" id="1_v424j"]
+[ext_resource type="Texture2D" uid="uid://cicaw2tsd0gx" path="res://assets/Bananas.png" id="2_v8mfu"]
+
+[node name="ScoreUI" type="CanvasLayer"]
+script = ExtResource("1_v424j")
+
+[node name="PickupImage" type="TextureRect" parent="."]
+offset_left = 22.0
+offset_top = 20.0
+offset_right = 88.0
+offset_bottom = 86.0
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_v8mfu")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ScoreLabel" type="Label" parent="."]
+modulate = Color(0.898039, 0.898039, 0.898039, 1)
+anchors_preset = -1
+anchor_right = 0.00329426
+offset_left = 85.0
+offset_top = 15.0
+offset_right = 183.205
+offset_bottom = 81.0
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/outline_size = 12
+text = "99"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

@@ -1,4 +1,4 @@
 res://scenes/game/main.tscn
-res://scenes/player/player.tscn
+res://autoloads/level_manager.gd
 res://scenes/levels/menu_main.tscn
-res://themes/theme.tres
+res://scenes/levels/menu_main.gd

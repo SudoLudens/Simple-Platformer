@@ -1,63 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dlkx8jdblspt7"]
+[gd_scene load_steps=2 format=3 uid="uid://dlkx8jdblspt7"]
 
-[ext_resource type="PackedScene" uid="uid://dn1q3ktbqdnoy" path="res://scenes/camera/simple_camera_2d.tscn" id="3_5t6t7"]
-[ext_resource type="PackedScene" uid="uid://c282cxrt8p73o" path="res://scenes/levels/lvl_demo.tscn" id="4_418qe"]
 [ext_resource type="PackedScene" uid="uid://codtvbbybgi4u" path="res://scenes/levels/menu_main.tscn" id="4_u5drr"]
-[ext_resource type="Script" path="res://scenes/game/test_disable.gd" id="5_76k0w"]
-[ext_resource type="Script" path="res://scenes/ui/ScoreLabel.gd" id="7_pvbsp"]
-[ext_resource type="Texture2D" uid="uid://cicaw2tsd0gx" path="res://assets/Bananas.png" id="8_qr0io"]
 
 [node name="Main" type="Node2D"]
 
-[node name="ScoreUI" type="CanvasLayer" parent="."]
-
-[node name="ScoreLabel" type="RichTextLabel" parent="ScoreUI"]
-clip_contents = false
-offset_left = 93.0
-offset_top = 28.0
-offset_right = 185.0
-offset_bottom = 98.0
-size_flags_horizontal = 4
-theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 12
-theme_override_font_sizes/normal_font_size = 36
-text = "100"
-autowrap_mode = 0
-script = ExtResource("7_pvbsp")
-metadata/_edit_use_anchors_ = true
-
-[node name="PickupImage" type="TextureRect" parent="ScoreUI"]
-offset_left = 24.0
-offset_top = 34.0
-offset_right = 64.0
-offset_bottom = 74.0
-texture = ExtResource("8_qr0io")
-metadata/_edit_use_anchors_ = true
-
-[node name="Levels" type="Node" parent="." node_paths=PackedStringArray("demo_scene")]
-script = ExtResource("5_76k0w")
-demo_scene = NodePath("LevelDemo")
-
-[node name="MenuMain" parent="Levels" instance=ExtResource("4_u5drr")]
-
-[node name="LevelDemo" parent="Levels" instance=ExtResource("4_418qe")]
-
-[node name="SimpleCamera2D" parent="." instance=ExtResource("3_5t6t7")]
-position = Vector2(632, 512)
-sync_limit_left = true
-sync_limit_right = true
-
-[node name="LimitTop" parent="SimpleCamera2D/MarkerContainer" index="0"]
-position = Vector2(496, 278)
-
-[node name="LimitBottom" parent="SimpleCamera2D/MarkerContainer" index="1"]
-position = Vector2(480, 624)
-
-[node name="LimitLeft" parent="SimpleCamera2D/MarkerContainer" index="2"]
-position = Vector2(272, 512)
-
-[node name="LimitRight" parent="SimpleCamera2D/MarkerContainer" index="3"]
-position = Vector2(832, 512)
-
-[editable path="SimpleCamera2D"]
+[node name="MenuMain" parent="." groups=["levels"] instance=ExtResource("4_u5drr")]

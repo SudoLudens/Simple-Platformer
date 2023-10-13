@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://codtvbbybgi4u"]
+[gd_scene load_steps=6 format=3 uid="uid://codtvbbybgi4u"]
 
+[ext_resource type="Script" path="res://scenes/levels/menu_main.gd" id="1_ebq7n"]
 [ext_resource type="StyleBox" uid="uid://chtsmr871vxlg" path="res://themes/style_box_default.tres" id="1_t8ghl"]
 
 [sub_resource type="Animation" id="Animation_w8hfg"]
@@ -88,6 +89,7 @@ _data = {
 }
 
 [node name="MenuMain" type="CanvasLayer"]
+script = ExtResource("1_ebq7n")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -95,6 +97,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 color = Color(0.419608, 0.592157, 1, 1)
 
 [node name="TitlePanelContainer" type="PanelContainer" parent="."]
@@ -106,6 +109,7 @@ offset_top = 136.0
 offset_right = 320.0
 offset_bottom = 240.0
 grow_horizontal = 2
+mouse_filter = 1
 theme_override_styles/panel = ExtResource("1_t8ghl")
 
 [node name="HBoxContainer" type="VBoxContainer" parent="TitlePanelContainer"]
@@ -159,3 +163,5 @@ autoplay = "title_animation"
 libraries = {
 "": SubResource("AnimationLibrary_0vnkh")
 }
+
+[connection signal="pressed" from="ButtonsHBox/StartButton" to="." method="on_start_button_pressed"]

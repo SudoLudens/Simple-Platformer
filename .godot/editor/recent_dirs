@@ -1,9 +1,8 @@
-res://themes
-res://scenes/game
-res://fonts
 res://scenes/levels
 res://scenes/ui
-res://global
+res://autoloads
+res://themes
+res://scenes/game
 res://assets/Pixel Adventure 1/Items/Fruits
 res://scenes/pickups
 res://scenes/player
