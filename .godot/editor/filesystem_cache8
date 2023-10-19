@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697206354
+::res://::1697683436
 icon.svg::CompressedTexture2D::1308861470170980129::1688059370::1688059383::1::::<><>::
 README.md::TextFile::-1::1695165336::0::1::::<><>::
 ::res://assets/::1697065202
@@ -338,16 +338,16 @@ Idle 1 (44x26).png::CompressedTexture2D::8040868327431224580::1689790116::168979
 Idle 2 (44x26).png::CompressedTexture2D::7249531763349155406::1689790116::1689790116::1::::<><>::
 Spikes in (44x26).png::CompressedTexture2D::8417599629097142882::1689790116::1689790116::1::::<><>::
 Spikes out (44x26).png::CompressedTexture2D::821790916836801306::1689790116::1689790116::1::::<><>::
-::res://autoloads/::1697162634
+::res://autoloads/::1697324223
 global.gd::GDScript::-1::1691105648::0::1::::<>Node<>::
-level_manager.gd::GDScript::-1::1697162634::0::1::::<>Node<>::
+level_manager.gd::GDScript::-1::1697324223::0::1::::<>Node<>::
 ::res://scenes/::1695578416
 ::res://scenes/camera/::1689604081
 camera_follow.gd::GDScript::-1::1689559980::0::1::::<>Camera2D<>::
 simple_camera_2d.tscn::PackedScene::8126412868744614432::1689604081::0::1::::<><>::res://scenes/camera/camera_follow.gd
-::res://scenes/checkpoints/::1689806305
-ending.gd::GDScript::-1::1689806305::0::1::::<>Area2D<>::
-ending.tscn::PackedScene::7349597096710900483::1689806305::0::1::::<><>::res://scenes/checkpoints/ending.gd<>uid://d3w1o61ph4p7s
+::res://scenes/checkpoints/::1697488927
+ending.gd::GDScript::-1::1697488926::0::1::::<>Area2D<>::
+ending.tscn::PackedScene::7349597096710900483::1697488927::0::1::::<><>::res://scenes/checkpoints/ending.gd<>uid://d3w1o61ph4p7s::::res://assets/Pixel Adventure 1/Items/Checkpoints/End/End (Idle).png
 ::res://scenes/enemies/::1695055492
 ::res://scenes/enemies/slime/::1695055499
 slime.gd::GDScript::-1::1690469603::0::1::::<>CharacterBody2D<>::
@@ -355,12 +355,12 @@ slime.tscn::PackedScene::5254652531016547743::1695055499::0::1::::<><>::res://sc
 ::res://scenes/environment/::1689805894
 one_way_floor.tscn::PackedScene::7487450572197354672::1689791039::0::1::::<><>::uid://c30lokb18did4
 tile_room.tscn::PackedScene::8565966790456665024::1689805894::0::1::::<><>::uid://c30lokb18did4
-::res://scenes/game/::1697162634
-main.tscn::PackedScene::7953439008076172546::1697162634::0::1::::<><>::uid://codtvbbybgi4u::::res://scenes/levels/menu_main.tscn
-::res://scenes/levels/::1697162025
-lvl_demo.tscn::PackedScene::6737708777096281454::1697162025::0::1::::<><>::uid://d0ntcar4bl8cp::::res://scenes/obstacles/launchpad/launch_pad.tscn<>uid://dubohsdh0kvdg::::res://scenes/environment/tile_room.tscn<>uid://cg4nmhswyalm2::::res://scenes/enemies/slime/slime.tscn<>uid://e5sede8ess7u::::res://scenes/player/player.tscn<>uid://dfwc12lhldld6::::res://scenes/pickups/banana.tscn<>uid://dn1q3ktbqdnoy::::res://scenes/camera/simple_camera_2d.tscn<>uid://cids43e5xj1qi::::res://scenes/ui/score_ui.tscn
-menu_main.gd::GDScript::-1::1697161837::0::1::::<>Node<>::
-menu_main.tscn::PackedScene::5762869491275587598::1697162024::0::1::::<><>::res://scenes/levels/menu_main.gd<>uid://chtsmr871vxlg::::res://themes/style_box_default.tres
+::res://scenes/game/::1697488927
+main.tscn::PackedScene::7953439008076172546::1697488927::0::1::::<><>::uid://codtvbbybgi4u::::res://scenes/levels/menu_main.tscn
+::res://scenes/levels/::1697488927
+lvl_demo.tscn::PackedScene::6737708777096281454::1697488927::0::1::::<><>::uid://d0ntcar4bl8cp::::res://scenes/obstacles/launchpad/launch_pad.tscn<>uid://dubohsdh0kvdg::::res://scenes/environment/tile_room.tscn<>uid://cg4nmhswyalm2::::res://scenes/enemies/slime/slime.tscn<>uid://e5sede8ess7u::::res://scenes/player/player.tscn<>uid://dfwc12lhldld6::::res://scenes/pickups/banana.tscn<>uid://dn1q3ktbqdnoy::::res://scenes/camera/simple_camera_2d.tscn<>uid://cids43e5xj1qi::::res://scenes/ui/score_ui.tscn<>uid://dcyg14xu7vq4b::::res://scenes/checkpoints/ending.tscn
+menu_main.gd::GDScript::-1::1697324145::0::1::::<>Node<>::
+menu_main.tscn::PackedScene::5762869491275587598::1697323073::0::1::::<><>::res://scenes/levels/menu_main.gd<>uid://chtsmr871vxlg
 ::res://scenes/obstacles/::1689806732
 ::res://scenes/obstacles/launchpad/::1689899686
 launch_pad.gd::GDScript::-1::1689806972::0::1::::<>Area2D<>::
@@ -373,7 +373,7 @@ player.gd::GDScript::-1::1697066346::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::343786921474050572::1697073137::0::1::::<><>::res://scenes/player/player.gd<>uid://cubguojcg54q8
 ::res://scenes/ui/::1697162024
 score_ui.gd::GDScript::-1::1697073260::0::1::::<>CanvasLayer<>::
-score_ui.tscn::PackedScene::5341691421872883336::1697162024::0::1::::<><>::res://scenes/ui/score_ui.gd<>uid://cicaw2tsd0gx::::res://assets/Bananas.png
+score_ui.tscn::PackedScene::5341691421872883336::1697162024::0::1::::<><>::res://scenes/ui/score_ui.gd<>uid://cicaw2tsd0gx
 ::res://themes/::1697065202
 style_box_dark.tres::StyleBoxFlat::678358310571392992::1696647077::0::1::::<><>::
 style_box_default.tres::StyleBoxFlat::5304501730941248480::1696647036::0::1::::<><>::

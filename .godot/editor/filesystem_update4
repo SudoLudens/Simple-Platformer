@@ -1,4 +1,6 @@
-res://scenes/game/main.tscn
+res://scenes/checkpoints/ending.tscn
 res://autoloads/level_manager.gd
-res://scenes/levels/menu_main.tscn
+res://scenes/checkpoints/ending.gd
 res://scenes/levels/menu_main.gd
+res://scenes/game/main.tscn
+res://scenes/levels/lvl_demo.tscn

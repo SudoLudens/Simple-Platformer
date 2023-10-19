@@ -27,11 +27,14 @@ func _unhandled_input(event):
 
 
 func on_start_button_pressed():
-	LevelManager.change_level(LevelManager.first_level)
+	LevelManager.next_level()
+
+
+func on_quit_button_pressed():
+	get_tree().quit()
 
 
 func skip_intro():
 	if !intro_has_been_skipped:
-		# Skip intro animation to end
 		animation_player.advance(animation_end_time)
 		intro_has_been_skipped = true

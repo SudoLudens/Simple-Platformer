@@ -165,3 +165,4 @@ libraries = {
 }
 
 [connection signal="pressed" from="ButtonsHBox/StartButton" to="." method="on_start_button_pressed"]
+[connection signal="pressed" from="ButtonsHBox/QuitButton" to="." method="on_quit_button_pressed"]
