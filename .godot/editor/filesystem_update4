@@ -1,6 +1,4 @@
-res://scenes/checkpoints/ending.tscn
-res://autoloads/level_manager.gd
-res://scenes/checkpoints/ending.gd
-res://scenes/levels/menu_main.gd
-res://scenes/game/main.tscn
-res://scenes/levels/lvl_demo.tscn
+res://scenes/notice.tscn
+res://scenes/levels/level_resources/background_day.tres
+res://scenes/levels/lvl_one.tscn
+res://scenes/enemies/slime/slime.tscn

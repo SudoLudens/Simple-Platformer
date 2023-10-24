@@ -32,4 +32,5 @@ func _ready():
 
 
 func _process(delta):
-	position.x = follow_target.global_position.x
+	if follow_target != null:
+		position.x = follow_target.global_position.x

@@ -265,6 +265,7 @@ size = Vector2(10, 4)
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 26
 script = ExtResource("1_cl82u")
+move_speed = 150.0
 jump_force = -300.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
