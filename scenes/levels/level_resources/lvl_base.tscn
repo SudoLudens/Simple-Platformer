@@ -41,4 +41,6 @@ position = Vector2(832, 512)
 
 [node name="Pickups" type="Node2D" parent="."]
 
+[node name="Enemies" type="Node2D" parent="."]
+
 [editable path="SimpleCamera2D"]

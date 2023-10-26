@@ -55,10 +55,10 @@ func flip():
 	direction *= -1
 
 
-func flip_at_ledge():
-	if !can_walk_off_ledges:
-		if !ground_check_raycast.get_collider():
-			print("turnaround")
+#func flip_at_ledge():
+#	if !can_walk_off_ledges:
+#		if !ground_check_raycast.get_collider():
+#			print("turnaround")
 
 
 func _on_flip_timer_timeout():
