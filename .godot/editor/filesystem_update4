@@ -4,4 +4,3 @@ res://scenes/enemies/slime/en_slime.tscn
 res://scenes/levels/lvl_one.tscn
 res://scenes/player/player.tscn
 res://scenes/enemies/bluebird/en_bluebird.gd
-res://scenes/notice.tscn

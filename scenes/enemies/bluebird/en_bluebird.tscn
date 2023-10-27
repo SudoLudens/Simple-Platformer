@@ -133,4 +133,4 @@ rotation = 1.5708
 shape = SubResource("CircleShape2D_vikkb")
 
 [node name="PlayerDetectionRayCast" type="RayCast2D" parent="."]
-target_position = Vector2(-272, 239)
+target_position = Vector2(-141, 150)

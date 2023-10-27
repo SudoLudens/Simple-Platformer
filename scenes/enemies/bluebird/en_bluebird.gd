@@ -7,6 +7,7 @@ extends CharacterBody2D
 var direction: int = -1
 
 var player_is_detected: bool = false
+var is_attacking: bool = false
 
 
 func _process(delta):
@@ -16,14 +17,19 @@ func _process(delta):
 		player_is_detected = false
 	
 	if player_is_detected:
-		attack_player()
+		if !is_attacking:
+			attack_player(player_detection_raycast.get_collision_point())
 
 
 func _physics_process(delta):
-	velocity.x = direction * move_speed
+	if !is_attacking:
+		velocity.x = direction * move_speed
 	
-	move_and_slide()
+		move_and_slide()
 
 
-func attack_player():
+func attack_player(collision_point: Vector2):
 	print("attacking player")
+	is_attacking = true
+	var swoop_tween = create_tween()
+
