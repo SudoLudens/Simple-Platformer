@@ -1,4 +1,5 @@
 Timer
+AnimationPlayer
 CharacterBody2D
 PathFollow2D
 AnimatableBody2D
@@ -17,7 +18,6 @@ TextureRect
 Node
 HBoxContainer
 VBoxContainer
-AnimationPlayer
 Button
 MenuButton
 MarginContainer

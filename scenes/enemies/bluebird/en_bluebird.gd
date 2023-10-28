@@ -1,17 +1,20 @@
-extends Node2D
+extends CharacterBody2D
 
 @onready var player_detection_raycast: RayCast2D = $PlayerDetectionRayCast
 @onready var death_timer: Timer = $DeathTimer
-@onready var animated_sprite: AnimatedSprite2D = $Path2D/PathFollow2D/CharacterBody2D/AnimatedSprite2D
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 @export var move_speed: float = 65
+@export var attack_rotation: float = -32
 
-var velocity: Vector2
+var target: Node2D
 
-var direction: int = -1
+var direction: Vector2 = Vector2(-1, 0)
+var collision_location: Vector2 = Vector2.ZERO
 
 var player_is_detected: bool = false
-var is_attacking: bool = false
+var can_move: bool = true
+var can_detect: bool = true
 
 
 func _process(delta):
@@ -20,23 +23,37 @@ func _process(delta):
 	else:
 		player_is_detected = false
 
-	if player_is_detected:
-		if !is_attacking:
-			attack_player(player_detection_raycast.get_collision_point())
+	if player_is_detected && can_detect:
+		can_detect = false
+		queue_attack(player_detection_raycast.get_collision_point(), player_detection_raycast.get_collider())
 
 
 func _physics_process(delta):
-	velocity = Vector2.ZERO
+	if can_move:
+		velocity = direction.normalized() * move_speed
 	
-	if !is_attacking:
-		velocity.x = direction * move_speed * delta
-	
-	position += velocity
+		move_and_slide()
 
 
-func attack_player(collision_point: Vector2):
-	print("attacking player")
-	is_attacking = true
+func queue_attack(collision_point: Vector2, colliding_object: Node2D):
+	can_move = false
+	collision_location = collision_point
+	animated_sprite.play("flap")
+	target = colliding_object
+
+
+func _on_animated_sprite_2d_animation_finished():
+	launch_attack()
+
+
+func launch_attack():
+	animated_sprite.play("attack")
+	rotation = attack_rotation
+	direction = target.position - position
+	direction = direction.normalized()
+	move_speed = 500
+	
+	can_move = true
 
 
 func take_damage():
