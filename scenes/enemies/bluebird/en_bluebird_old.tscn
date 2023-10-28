@@ -1,70 +1,63 @@
-[gd_scene load_steps=22 format=3 uid="uid://c5cb66rqhoe5t"]
+[gd_scene load_steps=20 format=3 uid="uid://3ih805bd43rw"]
 
-[ext_resource type="Script" path="res://scenes/enemies/bluebird/en_bluebird.gd" id="1_mdohv"]
-[ext_resource type="Script" path="res://scenes/enemies/bluebird/bird_take_damage.gd" id="2_nu1fd"]
-[ext_resource type="Texture2D" uid="uid://6w51b3tobw1g" path="res://assets/Pixel Adventure 2/Enemies/BlueBird/Flying (32x32).png" id="2_onaqf"]
-[ext_resource type="Texture2D" uid="uid://b5nucns3w1m3o" path="res://assets/Pixel Adventure 2/Enemies/BlueBird/Hit (32x32).png" id="3_muahs"]
-
-[sub_resource type="Curve2D" id="Curve2D_pluln"]
-_data = {
-"points": PackedVector2Array(-34.9623, -52.4434, 34.9623, 52.4434, 0, 0, 25.4271, -33.9028, -25.4271, 33.9028, -5, 108, 49.7948, 14.8325, -49.7948, -14.8325, -141, 150, -7.94597, 30.7244, 7.94597, -30.7244, -176, 63, -28.6055, 31.7839, 28.6055, -31.7839, -129, 0)
-}
-point_count = 5
+[ext_resource type="Script" path="res://scenes/enemies/bluebird/en_bluebird_old.gd" id="1_7rur4"]
+[ext_resource type="Texture2D" uid="uid://6w51b3tobw1g" path="res://assets/Pixel Adventure 2/Enemies/BlueBird/Flying (32x32).png" id="1_hy0r0"]
+[ext_resource type="Texture2D" uid="uid://b5nucns3w1m3o" path="res://assets/Pixel Adventure 2/Enemies/BlueBird/Hit (32x32).png" id="2_w7yjr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o6300"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y1aql"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qjjsu"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_meb5r"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mmv1m"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b6vdt"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_py4d8"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(192, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lj6v0"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_00i8v"]
-atlas = ExtResource("2_onaqf")
+atlas = ExtResource("1_hy0r0")
 region = Rect2(256, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6tx87"]
-atlas = ExtResource("3_muahs")
+atlas = ExtResource("2_w7yjr")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hhdbu"]
-atlas = ExtResource("3_muahs")
+atlas = ExtResource("2_w7yjr")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i1urd"]
-atlas = ExtResource("3_muahs")
+atlas = ExtResource("2_w7yjr")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rkq2k"]
-atlas = ExtResource("3_muahs")
+atlas = ExtResource("2_w7yjr")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_txra1"]
-atlas = ExtResource("3_muahs")
+atlas = ExtResource("2_w7yjr")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8dedu"]
@@ -124,39 +117,20 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vikkb"]
 
-[node name="EN_BlueBird" type="Node2D"]
-script = ExtResource("1_mdohv")
-
-[node name="PlayerDetectionRayCast" type="RayCast2D" parent="."]
-target_position = Vector2(-141, 150)
-
-[node name="Path2D" type="Path2D" parent="."]
-curve = SubResource("Curve2D_pluln")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-rotation = 0.982794
-rotates = false
-loop = false
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Path2D/PathFollow2D" groups=["enemies"]]
-rotation = -0.982794
-scale = Vector2(1, 1)
+[node name="EN_BlueBird" type="CharacterBody2D" groups=["enemies"]]
 collision_layer = 4
-collision_mask = 0
-script = ExtResource("2_nu1fd")
+script = ExtResource("1_7rur4")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Path2D/PathFollow2D/CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8dedu")
 animation = &"fly"
 autoplay = "fly"
+frame = 8
+frame_progress = 0.865665
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
 shape = SubResource("CircleShape2D_vikkb")
 
-[node name="DeathTimer" type="Timer" parent="."]
-wait_time = 0.1
-one_shot = true
-
-[connection signal="on_damage_taken" from="Path2D/PathFollow2D/CharacterBody2D" to="." method="take_damage"]
-[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
+[node name="PlayerDetectionRayCast" type="RayCast2D" parent="."]
+target_position = Vector2(-141, 150)

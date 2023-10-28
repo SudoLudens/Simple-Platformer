@@ -1,6 +1,11 @@
-res://scenes/enemies/bluebird/en_bluebird.tscn
+res://scenes/enemies/bluebird/en_bluebird_2.tscn
 res://scenes/levels/level_resources/background_day.tres
-res://scenes/enemies/slime/en_slime.tscn
 res://scenes/levels/lvl_one.tscn
-res://scenes/player/player.tscn
+res://scenes/enemies/bluebird/en_bluebird.tscn
 res://scenes/enemies/bluebird/en_bluebird.gd
+res://scenes/enemies/bluebird/en_blue_bird_2.tscn
+res://scenes/enemies/bluebird/en_bluebird_2.gd
+res://scenes/player/player.gd
+res://scenes/player/player.tscn
+res://scenes/enemies/slime/en_slime.tscn
+res://scenes/enemies/bluebird/bird_take_damage.gd

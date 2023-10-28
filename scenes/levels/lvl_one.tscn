@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bgjwgyiexgltu" path="res://scenes/levels/level_resources/lvl_base.tscn" id="1_h01qh"]
 [ext_resource type="PackedScene" uid="uid://e5sede8ess7u" path="res://scenes/player/player.tscn" id="2_54gn1"]
 [ext_resource type="PackedScene" uid="uid://cg4nmhswyalm2" path="res://scenes/enemies/slime/en_slime.tscn" id="3_grkgy"]
-[ext_resource type="PackedScene" uid="uid://3ih805bd43rw" path="res://scenes/enemies/bluebird/en_bluebird.tscn" id="4_vl038"]
+[ext_resource type="PackedScene" uid="uid://c5cb66rqhoe5t" path="res://scenes/enemies/bluebird/en_bluebird.tscn" id="5_dymq6"]
 
 [node name="LevelBase (rename)" instance=ExtResource("1_h01qh")]
 
@@ -37,7 +37,7 @@ position = Vector2(578, 606)
 [node name="EN_Slime3" parent="Enemies" index="2" instance=ExtResource("3_grkgy")]
 position = Vector2(630, 606)
 
-[node name="EN_BlueBird" parent="Enemies" index="3" instance=ExtResource("4_vl038")]
-position = Vector2(776, 394)
+[node name="EN_BlueBird" parent="Enemies" index="3" instance=ExtResource("5_dymq6")]
+position = Vector2(646, 459)
 
 [editable path="SimpleCamera2D"]

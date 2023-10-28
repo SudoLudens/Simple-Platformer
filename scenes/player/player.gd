@@ -112,6 +112,7 @@ func _on_recover_timer_timeout():
 func _on_jump_hit_box_body_entered(body):
 	if body.is_in_group("enemies"):
 		if body.has_method("take_damage"):
+			print(body)
 			body.call("take_damage")
 		
 		if Input.is_action_pressed("jump"):
