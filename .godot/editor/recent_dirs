@@ -1,7 +1,8 @@
+res://scenes/levels/level_resources
+res://scenes/levels
+res://scenes/obstacles/kill_box
 res://assets/Pixel Adventure 2/Enemies/BlueBird
 res://scenes/enemies/bluebird
-res://scenes/levels
-res://scenes/levels/level_resources
 res://scenes
 res://scenes/ui
 res://autoloads

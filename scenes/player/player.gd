@@ -118,3 +118,7 @@ func _on_jump_hit_box_body_entered(body):
 			velocity.y = jump_force * 1.25
 		else:
 			velocity.y = jump_force
+
+
+func _on_tree_exited():
+	print("Player died")

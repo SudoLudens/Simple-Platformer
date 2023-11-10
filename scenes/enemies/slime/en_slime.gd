@@ -5,11 +5,12 @@ extends CharacterBody2D
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var death_timer: Timer = $DeathTimer
 
+@export var direction: float = -1
 @export var move_speed: float = 30
 @export var can_walk_off_ledges: bool = false
 
 
-var direction: float = 1
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity")
 

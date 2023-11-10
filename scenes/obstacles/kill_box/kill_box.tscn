@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://o2qugcmpk4ic"]
+
+[ext_resource type="Script" path="res://scenes/obstacles/kill_box/kill_box.gd" id="1_jmtim"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mb1u8"]
+size = Vector2(244, 80)
+
+[node name="KillBox" type="Area2D"]
+script = ExtResource("1_jmtim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mb1u8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

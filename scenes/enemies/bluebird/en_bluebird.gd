@@ -5,6 +5,7 @@ extends CharacterBody2D
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 @export var move_speed: float = 65
+@export var attack_speed: float = 500
 @export var attack_rotation: float = -32
 
 var target: Node2D
@@ -51,7 +52,7 @@ func launch_attack():
 	rotation = attack_rotation
 	direction = target.position - position
 	direction = direction.normalized()
-	move_speed = 500
+	move_speed = attack_speed
 	
 	can_move = true
 

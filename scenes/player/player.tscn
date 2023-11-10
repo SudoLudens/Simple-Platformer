@@ -255,12 +255,12 @@ animations = [{
 "speed": 15.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r06ah"]
-radius = 9.0
-height = 18.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7abh3"]
+radius = 6.0
+height = 22.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xljr8"]
-size = Vector2(10, 4)
+size = Vector2(16, 6)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 10
@@ -282,8 +282,8 @@ autoplay = "idle"
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
-position = Vector2(0, -1)
-shape = SubResource("CapsuleShape2D_r06ah")
+rotation = 1.57079
+shape = SubResource("CapsuleShape2D_7abh3")
 debug_color = Color(0.862745, 0, 0.305882, 0.419608)
 
 [node name="RecoverTimer" type="Timer" parent="."]
@@ -294,8 +294,10 @@ position = Vector2(0, 11)
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JumpHitBox"]
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_xljr8")
 
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]
 [connection signal="timeout" from="RecoverTimer" to="." method="_on_recover_timer_timeout"]

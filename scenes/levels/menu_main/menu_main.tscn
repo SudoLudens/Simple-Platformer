@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://codtvbbybgi4u"]
+[gd_scene load_steps=7 format=3 uid="uid://codtvbbybgi4u"]
 
-[ext_resource type="Script" path="res://scenes/levels/menu_main.gd" id="1_ebq7n"]
+[ext_resource type="Script" path="res://scenes/levels/menu_main/menu_main.gd" id="1_ebq7n"]
 [ext_resource type="StyleBox" uid="uid://chtsmr871vxlg" path="res://themes/style_box_default.tres" id="1_t8ghl"]
+[ext_resource type="PackedScene" uid="uid://cy2tq6aple72x" path="res://scenes/levels/level_resources/transition_ui.tscn" id="3_ip6hh"]
 
 [sub_resource type="Animation" id="Animation_w8hfg"]
 length = 0.001
@@ -163,6 +164,8 @@ autoplay = "title_animation"
 libraries = {
 "": SubResource("AnimationLibrary_0vnkh")
 }
+
+[node name="TransitionUI" parent="." instance=ExtResource("3_ip6hh")]
 
 [connection signal="pressed" from="ButtonsHBox/StartButton" to="." method="on_start_button_pressed"]
 [connection signal="pressed" from="ButtonsHBox/QuitButton" to="." method="on_quit_button_pressed"]

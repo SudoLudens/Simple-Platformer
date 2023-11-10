@@ -27,7 +27,7 @@ func _unhandled_input(event):
 
 
 func on_start_button_pressed():
-	LevelManager.next_level()
+	LevelManager.end_level()
 
 
 func on_quit_button_pressed():

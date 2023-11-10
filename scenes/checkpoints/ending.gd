@@ -8,4 +8,4 @@ func _on_body_entered(body):
 
 func level_finished():
 	print("level finished")
-	LevelManager.next_level()
+	LevelManager.end_level()
