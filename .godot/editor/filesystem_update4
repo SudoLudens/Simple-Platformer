@@ -1,5 +1,3 @@
-res://scenes/levels/lvl_two.tscn
-res://scenes/levels/level_resources/background_day.tres
 res://scenes/levels/lvl_one.tscn
-res://scenes/player/player.tscn
-res://scenes/player/player.gd
+res://scenes/levels/level_resources/background_day.tres
+res://scenes/levels/lvl_two.tscn
