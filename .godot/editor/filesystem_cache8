@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699628568
+::res://::1699805920
+export_presets.cfg::TextFile::-1::1699630789::0::1::::<><>::
 icon.svg::CompressedTexture2D::1308861470170980129::1688055770::1688055783::1::::<><>::
 README.md::TextFile::-1::1695161736::0::1::::<><>::
 ::res://assets/::1697061602
@@ -338,40 +339,41 @@ Idle 1 (44x26).png::CompressedTexture2D::8040868327431224580::1689786516::168978
 Idle 2 (44x26).png::CompressedTexture2D::7249531763349155406::1689786516::1689786516::1::::<><>::
 Spikes in (44x26).png::CompressedTexture2D::8417599629097142882::1689786516::1689786516::1::::<><>::
 Spikes out (44x26).png::CompressedTexture2D::821790916836801306::1689786516::1689786516::1::::<><>::
-::res://autoloads/::1699627466
+::res://autoloads/::1699629489
 global.gd::GDScript::-1::1691102048::0::1::::<>Node<>::
-level_manager.gd::GDScript::-1::1699627466::0::1::::<>Node<>::
+level_manager.gd::GDScript::-1::1699629489::0::1::::<>Node<>::
 ::res://scenes/::1698519453
 notice.tscn::PackedScene::4563903229480101635::1698519453::0::1::::<><>::
 ::res://scenes/camera/::1697809679
 camera_follow.gd::GDScript::-1::1697809679::0::1::::<>Camera2D<>::
 simple_camera_2d.tscn::PackedScene::8126412868744614432::1689600481::0::1::::<><>::res://scenes/camera/camera_follow.gd
-::res://scenes/checkpoints/::1697686114
-ending.gd::GDScript::-1::1697684989::0::1::::<>Area2D<>::
-ending.tscn::PackedScene::7349597096710900483::1697686114::0::1::::<><>::res://scenes/checkpoints/ending.gd<>uid://d3w1o61ph4p7s
+::res://scenes/checkpoints/::1699753422
+ending.gd::GDScript::-1::1699753378::0::1::::<>Area2D<>::
+ending.tscn::PackedScene::7349597096710900483::1699753422::0::1::::<><>::res://scenes/checkpoints/ending.gd<>uid://d3w1o61ph4p7s::::res://assets/Pixel Adventure 1/Items/Checkpoints/End/End (Idle).png
 ::res://scenes/enemies/::1698172725
 ::res://scenes/enemies/bluebird/::1699576399
 en_bluebird.gd::GDScript::-1::1698616972::0::1::::<>CharacterBody2D<>::
 en_bluebird.tscn::PackedScene::1982287953524115072::1699576399::0::1::::<><>::res://scenes/enemies/bluebird/en_bluebird.gd<>uid://6w51b3tobw1g
 ::res://scenes/enemies/slime/::1699627468
 en_slime.gd::GDScript::-1::1699625890::0::1::::<>CharacterBody2D<>::
-en_slime.tscn::PackedScene::5254652531016547743::1699627468::0::1::::<><>::res://scenes/enemies/slime/en_slime.gd<>uid://do44oycqc5rq8::::res://assets/Pixel Adventure 2/Enemies/Slime/Hit (44x30).png<>uid://cj16mu1nkmf42::::res://assets/Pixel Adventure 2/Enemies/Slime/Idle-Run (44x30).png
+en_slime.tscn::PackedScene::5254652531016547743::1699627468::0::1::::<><>::res://scenes/enemies/slime/en_slime.gd<>uid://do44oycqc5rq8
 ::res://scenes/environment/::1699626829
 one_way_floor.tscn::PackedScene::7487450572197354672::1689787439::0::1::::<><>::uid://c30lokb18did4
-tile_room.tscn::PackedScene::8565966790456665024::1699626829::0::1::::<><>::uid://c30lokb18did4::::res://assets/Pixel Adventure 1/Terrain/Terrain (16x16).png
+tile_room.tscn::PackedScene::8565966790456665024::1699626829::0::1::::<><>::uid://c30lokb18did4
 ::res://scenes/game/::1699627386
-main.tscn::PackedScene::7953439008076172546::1699627386::0::1::::<><>::uid://codtvbbybgi4u::::res://scenes/levels/menu_main/menu_main.tscn
-::res://scenes/levels/::1699627575
+main.tscn::PackedScene::7953439008076172546::1699627386::0::1::::<><>::uid://codtvbbybgi4u
+::res://scenes/levels/::1699759704
 lvl_demo.tscn::PackedScene::6737708777096281454::1698082213::0::1::::<><>::uid://d0ntcar4bl8cp
-lvl_one.tscn::PackedScene::4042229966029279552::1699627575::0::1::::<><>::uid://bgjwgyiexgltu::::res://scenes/levels/level_resources/lvl_base.tscn<>uid://dfwc12lhldld6::::res://scenes/pickups/banana.tscn
-::res://scenes/levels/level_resources/::1699628549
-background_day.tres::GradientTexture2D::8409179256339922412::1699626916::0::1::::<><>::
-lvl_base.tscn::PackedScene::2827480907043690342::1699628549::0::1::::<><>::uid://dr2p7osn0oans::::res://scenes/levels/level_resources/background_day.tres<>uid://dubohsdh0kvdg::::res://scenes/environment/tile_room.tscn<>uid://dn1q3ktbqdnoy::::res://scenes/camera/simple_camera_2d.tscn<>uid://cids43e5xj1qi::::res://scenes/ui/score_ui.tscn<>uid://o2qugcmpk4ic::::res://scenes/obstacles/kill_box/kill_box.tscn<>uid://cy2tq6aple72x::::res://scenes/levels/level_resources/transition_ui.tscn<>uid://e5sede8ess7u::::res://scenes/player/player.tscn<>uid://dcyg14xu7vq4b::::res://scenes/checkpoints/ending.tscn
-transition_ui.gd::GDScript::-1::1699628301::0::1::::<>CanvasLayer<>::
-transition_ui.tscn::PackedScene::6514295638543915101::1699628549::0::1::::<><>::res://scenes/levels/level_resources/transition_ui.gd
-::res://scenes/levels/menu_main/::1699627386
-menu_main.gd::GDScript::-1::1697685010::0::1::::<>Node<>::
-menu_main.tscn::PackedScene::5762869491275587598::1699627386::0::1::::<><>::res://scenes/levels/menu_main/menu_main.gd<>uid://chtsmr871vxlg::::res://themes/style_box_default.tres
+lvl_one.tscn::PackedScene::4042229966029279552::1699756599::0::1::::<><>::uid://bgjwgyiexgltu::::res://scenes/levels/level_resources/lvl_base.tscn<>uid://dfwc12lhldld6::::res://scenes/pickups/banana.tscn
+lvl_two.tscn::PackedScene::932522992451472112::1699759704::0::1::::<><>::uid://bgjwgyiexgltu::::res://scenes/levels/level_resources/lvl_base.tscn
+::res://scenes/levels/level_resources/::1699756599
+background_day.tres::GradientTexture2D::8409179256339922412::1699730391::0::1::::<><>::
+lvl_base.tscn::PackedScene::2827480907043690342::1699752592::0::1::::<><>::uid://dr2p7osn0oans::::res://scenes/levels/level_resources/background_day.tres<>uid://dubohsdh0kvdg::::res://scenes/environment/tile_room.tscn<>uid://dn1q3ktbqdnoy::::res://scenes/camera/simple_camera_2d.tscn<>uid://cids43e5xj1qi::::res://scenes/ui/score_ui.tscn<>uid://o2qugcmpk4ic::::res://scenes/obstacles/kill_box/kill_box.tscn<>uid://cy2tq6aple72x::::res://scenes/levels/level_resources/transition_ui.tscn<>uid://e5sede8ess7u::::res://scenes/player/player.tscn<>uid://dcyg14xu7vq4b::::res://scenes/checkpoints/ending.tscn
+transition_ui.gd::GDScript::-1::1699756544::0::1::::<>CanvasLayer<>::
+transition_ui.tscn::PackedScene::6514295638543915101::1699756599::0::1::::<><>::res://scenes/levels/level_resources/transition_ui.gd
+::res://scenes/levels/menu_main/::1699752592
+menu_main.gd::GDScript::-1::1699629529::0::1::::<>Node<>::
+menu_main.tscn::PackedScene::5762869491275587598::1699752592::0::1::::<><>::res://scenes/levels/menu_main/menu_main.gd<>uid://chtsmr871vxlg::::res://themes/style_box_default.tres<>uid://cy2tq6aple72x::::res://scenes/levels/level_resources/transition_ui.tscn
 ::res://scenes/obstacles/::1699576778
 ::res://scenes/obstacles/kill_box/::1699627468
 kill_box.gd::GDScript::-1::1699576833::0::1::::<>Area2D<>::
@@ -382,9 +384,9 @@ launch_pad.tscn::PackedScene::8941977274864371743::1689896086::0::1::::<><>::res
 ::res://scenes/pickups/::1691776655
 banana.gd::GDScript::-1::1691776654::0::1::::<>Area2D<>::
 banana.tscn::PackedScene::7555791879942021273::1690980966::0::1::::<><>::res://scenes/pickups/banana.gd<>uid://brajlf4gnqubw
-::res://scenes/player/::1699628549
-player.gd::GDScript::-1::1699577248::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::343786921474050572::1699628549::0::1::::<><>::res://scenes/player/player.gd<>uid://cubguojcg54q8::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Fall (32x32).png<>uid://b2siedas33105::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Idle (32x32).png<>uid://de3figg84fosh::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Run (32x32).png<>uid://w7t1yhnf2df6::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Hit (32x32).png<>uid://brqrm631ygp3h::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Jump (32x32).png
+::res://scenes/player/::1699756599
+player.gd::GDScript::-1::1699754286::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::343786921474050572::1699756599::0::1::::<><>::res://scenes/player/player.gd<>uid://cubguojcg54q8::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Fall (32x32).png<>uid://b2siedas33105::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Idle (32x32).png<>uid://de3figg84fosh::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Run (32x32).png<>uid://w7t1yhnf2df6::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Hit (32x32).png<>uid://brqrm631ygp3h::::res://assets/Pixel Adventure 1/Main Characters/Ninja Frog/Jump (32x32).png
 ::res://scenes/ui/::1697158424
 score_ui.gd::GDScript::-1::1697069660::0::1::::<>CanvasLayer<>::
 score_ui.tscn::PackedScene::5341691421872883336::1697158424::0::1::::<><>::res://scenes/ui/score_ui.gd<>uid://cicaw2tsd0gx

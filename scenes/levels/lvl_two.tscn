@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://njyrufs4dapk"]
+
+[ext_resource type="PackedScene" uid="uid://bgjwgyiexgltu" path="res://scenes/levels/level_resources/lvl_base.tscn" id="1_1oge7"]
+
+[node name="LvlOne" instance=ExtResource("1_1oge7")]
+
+[node name="TransitionUI" parent="UI" index="1"]
+visible = false
+
+[editable path="SimpleCamera2D"]

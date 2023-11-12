@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bgjwgyiexgltu"]
+[gd_scene load_steps=9 format=3 uid="uid://bgjwgyiexgltu"]
 
 [ext_resource type="Texture2D" uid="uid://dr2p7osn0oans" path="res://scenes/levels/level_resources/background_day.tres" id="1_4r2g1"]
 [ext_resource type="PackedScene" uid="uid://dubohsdh0kvdg" path="res://scenes/environment/tile_room.tscn" id="2_2mlom"]
@@ -9,22 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://e5sede8ess7u" path="res://scenes/player/player.tscn" id="6_637tr"]
 [ext_resource type="PackedScene" uid="uid://dcyg14xu7vq4b" path="res://scenes/checkpoints/ending.tscn" id="6_vv8o8"]
 
-[sub_resource type="GDScript" id="GDScript_cw16k"]
-script/source = "extends Node2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
-
 [node name="LvlBase" type="Node2D"]
-script = SubResource("GDScript_cw16k")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(566, 328)
@@ -62,10 +47,6 @@ position = Vector2(832, 512)
 
 [node name="TransitionUI" parent="UI" instance=ExtResource("5_rfong")]
 
-[node name="ColorRect" parent="UI/TransitionUI" index="0"]
-offset_right = 1152.0
-offset_bottom = 648.0
-
 [node name="Ending" parent="." instance=ExtResource("6_vv8o8")]
 position = Vector2(744, 590)
 
@@ -83,4 +64,3 @@ position = Vector2(1424, 944)
 scale = Vector2(10, 5)
 
 [editable path="SimpleCamera2D"]
-[editable path="UI/TransitionUI"]

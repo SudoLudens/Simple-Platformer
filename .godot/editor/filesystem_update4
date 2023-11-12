@@ -1,9 +1,5 @@
-res://scenes/levels/level_resources/lvl_base.tscn
+res://scenes/levels/lvl_two.tscn
 res://scenes/levels/level_resources/background_day.tres
-res://scenes/levels/level_resources/transition_ui.tscn
+res://scenes/levels/lvl_one.tscn
 res://scenes/player/player.tscn
-res://scenes/levels/level_resources/transition_ui.gd
-res://autoloads/level_manager.gd
-res://scenes/checkpoints/ending.gd
-res://scenes/levels/menu_main/menu_main.tscn
-res://scenes/levels/menu_main/menu_main.gd
+res://scenes/player/player.gd

@@ -3,8 +3,8 @@ extends CharacterBody2D
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var recover_timer: Timer = $RecoverTimer
 
-@export var move_speed: float = 200.0
-@export var jump_force: float = -400.0
+@export var move_speed: float = 120
+@export var jump_force: float = -325.0
 @export var hurt_launch_force: float = 50
 
 var direction: float
