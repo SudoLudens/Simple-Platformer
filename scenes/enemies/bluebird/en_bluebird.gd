@@ -8,8 +8,6 @@ extends CharacterBody2D
 @export var attack_speed: float = 500
 @export var attack_rotation: float = -32
 
-var target: Node2D
-
 var direction: Vector2 = Vector2(-1, 0)
 var collision_location: Vector2 = Vector2.ZERO
 
@@ -26,7 +24,7 @@ func _process(delta):
 
 	if player_is_detected && can_detect:
 		can_detect = false
-		queue_attack(player_detection_raycast.get_collision_point(), player_detection_raycast.get_collider())
+		queue_attack(player_detection_raycast.get_collision_point())
 
 
 func _physics_process(delta):
@@ -36,11 +34,10 @@ func _physics_process(delta):
 		move_and_slide()
 
 
-func queue_attack(collision_point: Vector2, colliding_object: Node2D):
+func queue_attack(collision_point: Vector2):
 	can_move = false
 	collision_location = collision_point
 	animated_sprite.play("flap")
-	target = colliding_object
 
 
 func _on_animated_sprite_2d_animation_finished():
@@ -50,7 +47,7 @@ func _on_animated_sprite_2d_animation_finished():
 func launch_attack():
 	animated_sprite.play("attack")
 	rotation = attack_rotation
-	direction = target.position - position
+	direction = Vector2(-1, 1)
 	direction = direction.normalized()
 	move_speed = attack_speed
 	

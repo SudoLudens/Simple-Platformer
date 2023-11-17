@@ -6,7 +6,7 @@ signal on_level_end
 @export_file("*.tscn") var main_menu = "res://scenes/levels/menu_main/menu_main.tscn"
 @export_file("*.tscn") var first_level = "res://scenes/levels/lvl_one.tscn"
 @export_file("*.tscn") var second_level = "res://scenes/levels/lvl_two.tscn"
-@export_file("*.tscn") var third_level = "res://scenes/levels/lvl_one.tscn"
+@export_file("*.tscn") var third_level = "res://scenes/levels/lvl_three.tscn"
 @export_file("*.tscn") var fourth_level = "res://scenes/levels/lvl_one.tscn"
 @export_file("*.tscn") var fifth_level = "res://scenes/levels/lvl_one.tscn"
 

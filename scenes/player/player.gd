@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var move_speed: float = 120
 @export var jump_force: float = -325.0
 @export var hurt_launch_force: float = 50
+@export var max_fall_speed: float = 400
 
 var direction: float
 
@@ -32,6 +33,8 @@ func handle_movement(passed_delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * passed_delta
+		if velocity.y > max_fall_speed:
+			velocity.y = max_fall_speed
 	
 	
 	if !can_move:
