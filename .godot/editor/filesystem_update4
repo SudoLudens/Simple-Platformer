@@ -1,6 +1,4 @@
 res://scenes/levels/lvl_three.tscn
 res://scenes/levels/level_resources/background_day.tres
+res://scenes/enemies/slime/en_slime.tscn
 res://scenes/obstacles/launchpad/launch_pad.tscn
-res://scenes/player/player.tscn
-res://scenes/enemies/bluebird/en_bluebird.tscn
-res://scenes/enemies/bluebird/en_bluebird.gd

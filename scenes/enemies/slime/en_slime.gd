@@ -49,6 +49,7 @@ func handle_flip():
 	
 	# Handle flipping when hitting wall
 	if wall_check_raycast.get_collider():
+		print(wall_check_raycast.get_collider())
 		flip()
 
 

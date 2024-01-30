@@ -47,7 +47,7 @@ func _on_animated_sprite_2d_animation_finished():
 func launch_attack():
 	animated_sprite.play("attack")
 	rotation = attack_rotation
-	direction = Vector2(-1, 1)
+	direction = collision_location - global_position
 	direction = direction.normalized()
 	move_speed = attack_speed
 	
